@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+/* browser reset */
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* global css variables */
+:root {
+  /* retro black */
+  /* --background-color: #212529; */
+  --background-color: #fff;
+  /* --global-text-color: #fff; */
+  --global-text-color: #333;
+  --selected-text-color: #000;
+  --action-color: #FF001D;
+}
+
+body {
+  font-family: 'Press Start 2P', cursive;
+  /* overflow: hidden; */
+  /* letter-spacing: 1px; */
+  color: var(--global-text-color);
+  background: var(--background-color);
+}
+
+/* remove default blue outline on focused inputs and buttons */
+input, input:focus, button, button:focus {
+  outline-color: var(--action-color);
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  max-width: 1000px;
+  text-align: center;
+  height: 100vh;
+}
+
+footer {
+  /* emulate a sticky footer */
+  margin: 2em auto 3px auto !important;
+  /* min-height: 25px; */
+  width: 100%;
+  padding: 0.25em 1em !important;
+  /* background: var(--global-text-color);
+  color: var(--background-color); */
+}
+
+footer span:first-child {
+  color: var(--action-color);
+}
+
+span#footer-kerning {
+  letter-spacing: -5px;
+}

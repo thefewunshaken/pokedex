@@ -1,0 +1,3 @@
+.search-bar > input, .search-bar > input:focus {
+  outline-color: #000;
+}
